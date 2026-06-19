@@ -1,6 +1,6 @@
 # 💰 FinTrack — Smart Personal Finance Tracker
 
-A full-stack web application to track income, expenses, and savings with AI-powered financial insights — built for Indian users with INR support.
+A full-stack web application to track income, expenses and savings with AI-powered financial insights built for Indian users with INR support.
 
 🔗 **Live Demo:** [finance-tracker-fw9c.onrender.com](https://finance-tracker-fw9c.onrender.com)
 
@@ -12,7 +12,7 @@ A full-stack web application to track income, expenses, and savings with AI-powe
 
 ## ✨ Features
 
-- 🔐 **User Authentication** — secure signup/login, each user's data stays private
+- 🔐 **User Authentication** — secure signup/login, each users data stays private
 - 💸 **Income & Expense Tracking** — categorized entries (Food, Rent, Shopping, Medical, etc.)
 - 🎯 **Monthly Budget Goals** — set budgets and track progress per category
 - 📊 **Visual Analytics** — spending breakdown charts and category-wise insights
@@ -33,12 +33,6 @@ A full-stack web application to track income, expenses, and savings with AI-powe
 | AI | Google Gemini API |
 | Frontend | HTML, CSS, JavaScript, Chart.js |
 | Deployment | Render |
-
----
-
-## 📸 Screenshots
-
-*(Add 2-3 screenshots of your dashboard here — light mode, dark mode, AI insights)*
 
 ---
 
@@ -84,7 +78,7 @@ Visit `http://127.0.0.1:5000` in your browser.
 ## 👤 Author
 
 **Kavleen Kaur**
-B.Sc. Applied Statistics & Data Science (Final Year)
+B.Sc. Applied Statistics & Data Science 
 
 ---
 
