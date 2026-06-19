@@ -1,4 +1,4 @@
-import google.generativeai as genai
+from google import genai
 import os
 import json
 from dotenv import load_dotenv
@@ -6,8 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_ai_insights(summary, category_breakdown, budget, month):
-    genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
     total_income = summary.get("income", 0)
     total_expense = summary.get("expense", 0)
@@ -50,7 +49,10 @@ Rules:
 - Think about Indian lifestyle and expenses
 """
 
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(
+        model="gemini-2.0-flash",
+        contents=prompt
+    )
     response_text = response.text.strip()
     response_text = response_text.replace("```json", "").replace("```", "").strip()
     result = json.loads(response_text)
